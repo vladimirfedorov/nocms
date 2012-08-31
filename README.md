@@ -9,8 +9,8 @@ CMS file structure:
 -------------------
 
 	blog/
-	   <i>language</i>/ 				two-letter language definition or 'common'
-	      <i>yyyyMMdd-HHmm</i>.txt 		blog record
+	   **language**/ 				two-letter language definition or 'common'
+	      yyyyMMdd-HHmm.txt 		blog record
 	      blog.lst 				blog cache
 	core/
 	   core.cfg 				system configuration
@@ -25,18 +25,18 @@ CMS file structure:
 	   script.js 				site scripts — insert your code into this file
 	   site.js 				'site' class
 	page/
-	   <i>language</i>/				two-letter language definition or 'common'
+	   language/				two-letter language definition or 'common'
 	      about.html 			example of a simple page
 	      blog.html 			blog
 	      photo.html 			photos
-	      lang.<i>language</i>.txt 		file contains menu translation for the <i>language</i> language
+	      lang.language.txt 		file contains menu translation for the <i>language</i> language
 	photo/
 	   yyyy/
 	      album/
-	         <i>image</i>.jpg 			full size image
+	         image.jpg 			full size image
 	         thmb/
-	            <i>image</i>.jpg 			thumbnail
-	   <i>language</i>/				two-letter language definition or 'common'
+	            image.jpg 			thumbnail
+	   language/				two-letter language definition or 'common'
 	      cache.lst 			photo cache
 	      description.lst 			description or translation for each folder in photo
 	plugins/				3rd party plugins
