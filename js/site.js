@@ -27,6 +27,14 @@ var site = {
 		return pageName;
 	},
 
+	// returns short page name without anchor suffix
+	getShortPageName: function(pageName) {
+		var hyphenIdx = pageName.indexOf("-");
+		if (hyphenIdx > -1)
+			pageName = pageName.substr(0, hyphenIdx);
+		return pageName;
+	},
+
 	// Load page content
 	// page must contain #content block and #loadingMessage block
 	loadPage: function(pageName) {
@@ -45,11 +53,12 @@ var site = {
 		
 		// update menu status
 		if (menu) {
-			menu.setActive(pageName);
+			menu.setActive(site.getShortPageName(pageName));
 			menu.onPageChangeComplete();
 		}
 
 	},
+
 
 	// Change site language.
 	// language is stored in a cookie

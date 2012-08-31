@@ -98,8 +98,11 @@ var blog = {
 				// select the first post in the list
 				if (pageNum.length != 13)
 					$("#"+dataArray[1][0]).click();
-				else
-					$("#"+pageNum).click();
+				else {
+					if ($("#"+pageNum).length == 1) $("#"+pageNum).click();
+					else $("#"+dataArray[1][0]).click();
+				}
+
 			}
 		});
 	},
@@ -109,10 +112,8 @@ var blog = {
 		var language = site.getLanguage();
 		var monthNames = Array("en", "ru");
 		monthNames["en"] = Array("","JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER");
-		//Januar Februar März April Mai Juni Juli August September Oktober November Dezember
 		monthNames["de"] = Array("","JANUAR","FEBRUAR","MÄRZ","APRIL","MAI","JUNI","JULI","AUGUST","SEPTEMBER","OKTOBER","NOVEMBER","DEZEMBER");
-		//Janvier Février Mars Avril Mai Juin Juillet Août Septembre Octobre Novembre Décembre
-		monthNames["fr"] = Array("","JANVIER","FÉVRIER","MARS","AVRIL","MAI","JUIN","JUILLET","AOÛT","SEPTEMBRE","OCTOBRE","NOVEMBRE","DÉCEMBRE");
+		monthNames["fr"] = Array("","JANVIER","FÉVRIER","MARS","AVRIL","MAI","JUIN","JUILLET","AOÛT","SEPTEMBRE","OCTOBRE","NOVEMBRE","DÉCEMBRE");		
 		return monthNames[language][parseInt(date.substr(4,2))] + " " + date.substr(0,4);
 	},
 
