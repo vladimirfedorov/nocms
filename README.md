@@ -10,36 +10,36 @@ CMS file structure:
 
 	blog/
 	   language/ 				two-letter language definition or 'common'
-	      yyyyMMdd-HHmm.txt 		blog record
+	      yyyyMMdd-HHmm.txt 	blog record
 	      blog.lst 				blog cache
 	core/
 	   core.cfg 				system configuration
 	   core.php 				system functions
 	css/ 							
 	   styles.css 				styles for the site
-	images/					images for the site
+	images/						images for the site
 	js/
-	   blog.js 				'blog' class
-	   menu.js 				'menu' class
-	   photo.js				'photo' class
+	   blog.js 					'blog' class
+	   menu.js 					'menu' class
+	   photo.js					'photo' class
 	   script.js 				site scripts — insert your code into this file
-	   site.js 				'site' class
+	   site.js 					'site' class
 	page/
 	   language/				two-letter language definition or 'common'
 	      about.html 			example of a simple page
 	      blog.html 			blog
 	      photo.html 			photos
-	      lang.language.txt 		file contains menu translation for the <i>language</i> language
+	      lang.language.txt 	file contains menu translation for the <i>language</i> language
 	photo/
 	   yyyy/
 	      album/
 	         image.jpg 			full size image
 	         thmb/
-	            image.jpg 			thumbnail
+	            image.jpg 		thumbnail
 	   language/				two-letter language definition or 'common'
 	      cache.lst 			photo cache
-	      description.lst 			description or translation for each folder in photo
-	plugins/				3rd party plugins
+	      description.lst 		description or translation for each folder in photo
+	plugins/					3rd party plugins
 	
 
 Blog record file format
