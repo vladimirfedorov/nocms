@@ -1,0 +1,91 @@
+/* common */
+html,body {height:100%; margin:0; 
+	color:#4b4e4b;
+	font-family:Helvetica; font-size:14px; line-height:130%; 
+	background-image:url('../images/bg-white.png'); background-repeat: repeat;
+}
+
+.siteName{font-family:'Open Sans Condensed','Arial Narrow',sans-serif;font-size:190%; color:#aaa; margin-bottom:20px; text-transform:none; cursor: default;}
+.menu{display:inline-block; margin:0px 0 35px 0;text-align:left; text-transform:uppercase;}
+.menu a {color:#57b; font-size:230%; text-decoration:none; margin-right:20px; cursor:pointer; font-family:'Open Sans Condensed', sans-serif;}
+.menu a:hover {color:#79e;border-bottom:5px solid #79e;}
+.menu a.last {margin-right:0;}
+.menu a.active {color:black; cursor:default; border-bottom:5px solid black;}
+
+.postTitle {margin-bottom:0px;}
+.postRec {color:#c2c7c2; margin-top:-50px;}
+.postsList a {display:block;margin-bottom:8px;padding-left:10px;}
+.postsListElement {}
+.postsListDate {font-size:9px;padding-left:10px;color:#aaa;}
+.postsList a.active {padding-left: 5px; border-left: 5px solid black;color:black;text-decoration: none;}
+
+a.nav {display:block;text-align:right; font-size: 90%; text-decoration: none;}
+a.pageup {border-bottom: 1px dotted #999;  padding-bottom:6px; margin-top:-30px;}
+a.pagedown {border-top: 1px dotted #999; padding-top:6px;}
+
+#langPanel{display:inline-block;margin-left:30px; font-size:70%;font-weight: bold;}
+#langPanel a {text-decoration: none; border:1px solid transparent;}
+#langPanel a:hover {border:1px solid black;color:#999;}
+.langButton {color:#ccc;padding:1px 9px; }
+.langButton.active {color:#777;}
+#langPanel a.active:hover {color:#777;}
+
+.page{background-color:white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px 5px;	
+	-webkit-box-shadow:  0 0 15px rgba(0,0,0,0.1);
+	-moz-box-shadow:  0 0 15px rgba(0,0,0,0.1);
+	box-shadow:  0 0 15px rgba(0,0,0,0.1);
+}
+a {color:#57b;}
+#content { padding-top:25px;}
+.footer {border-top:1px solid #eee; text-align:center; padding:20px 0 20px 0; margin-top:20px;font-size:80%; color:#999;}
+.footer a {color:#999;}
+hr {width:100%;height:1px;overflow:hidden;background:none;border:none;border-top:1px dotted #bbb;}
+h1 {font-family:'Open Sans Condensed','Arial Narrow',sans-serif;font-size:210%;margin-top:40px; margin-bottom:25px;line-height:100%;color:#b4b8b4;}
+h2 {font-family:'Open Sans Condensed','Arial Narrow',sans-serif;font-size:150%;margin:30px 0 12px 0;line-height:100%;color:#747A74;}
+h3 {font-family:'Open Sans Condensed','Arial Narrow',sans-serif;font-size:130%; margin:20px 0 8px 0; font-weight:bold;}
+p {margin-bottom:12px;}
+h1.first, h2.first, h3.first {margin-top:0;}
+
+#photoBlock div.photoImageTile,div.photoTextTile,div.photoImageTile img {width:100px; height:100px;}
+#photoBlock div { margin-left: 10px; margin-bottom: 10px; overflow:hidden;}
+.photoTextTile{display:block;float:left; font-size:9px; text-transform: uppercase; vertical-align:middle; cursor:default;
+	background:url('../images/rt.gif') right center no-repeat;}
+.photoTextTile table,tr,td {margin:0;padding:0;}
+.photoTextTile td {height:100px; line-height: 10px;}
+.photoTextTile .year {color:#aaa;}
+.photoImageTile{display:block; float:left; background-color:#999;}
+
+a.download{background: url('../images/icons.png') no-repeat 0 0; height:20px;
+	padding-left: 18px; display:block; margin-bottom:6px; margin-top:6px; white-space: nowrap;}
+a.extlink{background: url('../images/icons.png') no-repeat 0 -20px; height:20px;
+	padding-left:18px; display:block; margin-bottom:6px; margin-top:6px; white-space: nowrap;}
+
+/***** iPad Smaller than 959px *****/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.menu a{font-size:200%;}
+#photoBlock div.photoImageTile,div.photoTextTile,div.photoImageTile img {width:110px; height:110px;}
+	#photoBlock div { margin-left: 10px; margin-bottom: 10px; overflow:hidden;}
+	.photoTextTile td {height:110px;}
+}
+
+/***** iPhone (landscape) *****/
+@media only screen and (max-width: 767px) {
+	.menu a {display:block; padding-left:5px; line-height:100%; border-bottom:none; border-left:10px solid transparent; font-size:180%; margin-bottom:8px;}
+	.menu a:hover {border-bottom:none;border-left:10px solid #79e;}
+	.menu a.active {border-bottom:none; border-left:10px solid black;}
+	.siteName {padding-left:15px;}
+	.grid_3 {width:220px;}
+}
+
+/***** iPhone (portrait) *****/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 480px) {
+#photoBlock div.photoImageTile,div.photoTextTile,div.photoImageTile img {width:70px; height:70px;}
+	#photoBlock div { margin-left: 5px; margin-bottom: 5px; overflow:hidden;}
+	.photoTextTile td {height:70px;}
+}

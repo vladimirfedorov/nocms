@@ -1,0 +1,5 @@
+[["#photo", "Photos"]
+,["#about","Sur nocms"]
+,["#blog","Blog"]
+,["#contacts","Contacts"]
+]

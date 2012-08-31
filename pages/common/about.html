@@ -1,0 +1,84 @@
+<div class="row">
+<div class="grid_12">
+
+<h1 class="first">About</h1>
+
+<p>This is an example of an ajax-based site without any content management system.
+
+<p>The actual system consists of two files only: 
+	<strong>core/core.cfg</strong> contains configuration data, <strong>core/core.php</strong> contains all server-side functions of the system.
+	<strong>pages</strong> folder contains pages like this one, <strong>blog</strong> folder contains blog records. 
+
+
+<h2>CMS file structure:</h2>
+<p>
+	<pre style="font-size:12px;overflow:auto;">
+	blog/
+	   <i>language</i>/ 				two-letter language definition or 'common'
+	      <a href="#about-blog" title="File format"><i>yyyyMMdd-HHmm</i>.txt</a> 		blog record
+	      blog.lst 				blog cache
+	core/
+	   core.cfg 				system configuration
+	   core.php 				system functions
+	css/ 							
+	   styles.css 				styles for the site
+	images/					images for the site
+	js/
+	   blog.js 				'blog' class
+	   menu.js 				'menu' class
+	   photo.js				'photo' class
+	   script.js 				site scripts — insert your code into this file
+	   site.js 				'site' class
+	page/
+	   <i>language</i>/				two-letter language definition or 'common'
+	      about.html 			example of a simple page
+	      blog.html 			blog
+	      photo.html 			photos
+	      <a href="#about-menu" title="File format">lang.<i>language</i>.txt</a> 		file contains menu translation for the <i>language</i> language
+	photo/
+	   yyyy/
+	      album/
+	         <i>image</i>.jpg 			full size image
+	         thmb/
+	            <i>image</i>.jpg 			thumbnail
+	   <i>language</i>/				two-letter language definition or 'common'
+	      cache.lst 			photo cache
+	      <a href="#about-photo" title="File format">description.lst</a> 			description or translation for each folder in photo
+	plugins/				3rd party plugins
+	</pre>
+
+<a name="about-blog"></a>
+<h2>Blog record file format</h2>
+<p>Each blog record file has a name in the form of a date in '<i>yyyyMMdd-HHmm</i>.txt' format and some text inside the file with special fields for title and tags. It is possible add more special fields and use them. 
+<p><strong>@title:</strong> describes the title of a blog record
+<p><strong>@tags:</strong> lists tags for this record
+<p>For example:
+	<pre style="font-size:12px;overflow:auto;">
+	@title: Morning coffee
+	@tags: coffee, morning
+
+	Strong aroma of a cup of coffee wakes me up every morning.
+	</pre>
+
+<a name="about-menu"></a>
+<h2>Localized menu file format</h2>
+<p>Files contain javascript array of pairs ["<i>elementId</i>", "<i>name</i>"]. For example, <strong>lang.de.txt</strong> contains:
+<pre style="font-size:12px;overflow:auto;">
+	[["#photo", "Foto"]
+	,["#about","Über nocms"]
+	,["#blog","Blog"]
+	,["#contacts","Kontakte"]
+	]
+</pre>
+
+<a name="about-photo"></a>
+<h2>Photo description file format</h2>
+<p>Files contain a localized name for each folder. If no localized name is found, the original name is used.
+<pre style="font-size:12px;overflow:auto;">
+	Year/FolderName LocalizedName
+</pre>
+
+<h2>Common principles of localization</h2>
+<p>When you need to translate a page you copy it from <strong>common</strong> folder into two-letter localization folder (e. g.,  <strong>de</strong>). The <strong>core.php</strong> file of the site tries to get language preferences from visitor's browser and returns a page in an appropriate language (or a page from the <strong>common</strong> folder when there is no localized version).
+
+</div></div>

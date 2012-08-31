@@ -1,0 +1,104 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	html,body {height:100%; margin:0;padding:0;  
+		color:#4b4e4b; background-color:#eee;
+		font-family:Helvetica; font-size:14px; line-height:130%;}
+	.wrapper {min-height:100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 0 -60px; /* the bottom margin is the negative value of the footer's height */
+	}
+	footer, .push {height:60px;}
+	footer {/*background-color:#f1f4f0;*/ color:#777; font-size:10px;}
+	footer .text {color:#949B94; margin-top:16px;text-align:center;}
+	footer a {color:#949B94;}
+	header {position:fixed; border-bottom: 1px solid #eef;left:0;width:100%; color:#ccc;}
+	header a {color:#ccc;}
+	.menu{height:100px;background-image: url('../images/top_bg.png'); background-repeat:repeat;
+		-webkit-border-radius:0 0 5px 5px;
+		-moz-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;	
+	}
+	.ruler{height:18px;background-image:url('../images/ruler-transp.png'); background-repeat:repeat-x; overflow:hidden; color:#474;}
+	#content {padding:124px 0 16px 0;}
+	hr {width:100%;height:1px;overflow:hidden;background:none;border:none;border-top:1px dotted #ddd;}
+	h1 {font-size:200%;margin-top:20px; margin-bottom:20px;line-height:100%;color:#A4A8A4;}
+	h2 {font-size:150%;margin-bottom:10px;line-height:100%;color:#747A74;}
+	h3 {font-size:110%; margin:4px 0 8px; font-weight:bold;}
+	p {margin-bottom:12px;}
+	h1.first, h2.first, h3.first {margin-top:0;}
+
+	.hidden {display:none;}
+	.pageSwitches{display:inline-block;margin-top:2px;height:90px;} 
+	.pageSwitches .switch {display:inline-block;
+		height:56px; width:28px; margin:0 4px;
+		background: url('../images/sw_off.png') no-repeat;
+	}
+	.pageSwitchesCaption {font-size:9px; letter-spacing:2px; text-align:center; line-height:14px;}
+	.bignum {font-size:350px; color:#e1e4e0; line-height:normal;}
+	.bg100 {width:100%;height:100%;position:fixed;z-index:-100;}
+	.leds div {margin-bottom: 4px;}
+	.photoBlock{width:100%; background-color:#c0cccf; padding:0px; text-align:center;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;	
+		
+		-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+		-moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+		box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+	}
+	.photoBlock a {margin-right:1%;}	
+	
+	.mP{padding:10px}
+	a.download{background: url('../images/download.gif') no-repeat left top; padding-left: 20px; display:block; margin-bottom:6px; white-space: nowrap;}
+	a.extlink{background: url('../images/right_circular.gif') no-repeat left top; padding-left:20px; display:block; margin-bottom:6px;white-space: nowrap;}
+	.bigHeading{position:absolute; top:0px; left:0; font-size:200px; width:95%; height:300px;  
+		font-weight:bold; color:#f4f4f4;z-index:-1; overflow:hidden;padding-top:120px;}
+	table.desc {}
+	table.desc td {padding-right:20px; margin:3px; vertical-align: top;}
+	ul {margin-bottom:10px; margin-top:5px;}
+	ul li {margin-left:20px;}
+	span.tumbler {border:1px solid #a44; padding:2px 4px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;	
+	}
+	.bottomWord {height:100px;width:100%; vertical-align:middle;text-align:center;}
+	.showLetter{border:1px solid #ddd; border-right:none;}
+	.showLetter+.last{border-right:1px solid #ddd;}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+	header {position:static;}
+	.ruler {display:none;}
+	#content {padding-top:10px;}
+	.bignum {font-size:20px; color:#e1e4e0; line-height:normal; display:block; width:100%; text-align:center;}
+	.photoBlock{
+		-webkit-border-radius:none;
+		-moz-border-radius:none;
+		border-radius:none;	
+	}
+	h1.first, h2.first, h3.first {margin-top:20px;}
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

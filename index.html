@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>nocms site engine</title>
+        <meta name="description" content="about me"/>
+        <meta name="author" content="Vladimir Fedorov" />
+        <link rel="stylesheet" href="css/amazium.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.cookie.js"></script>
+        <script type="text/javascript" src="plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <!--<script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34036049-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>-->
+    
+    </head>
+    <body>
+        <div class="menuContainer">        
+            <div class="row">
+                <div class="grid_12">
+                    <div class="siteName">nocms site engine 
+                        <span id="langPanel">
+                            <a id="langen" class="langButton active" href="EN" onclick="return site.changeLang('en');">EN</a>
+                            <a id="langde" class="langButton" href="DE"  onclick="return site.changeLang('de');">DE</a>
+                            <a id="langfr" class="langButton" href="FR"  onclick="return site.changeLang('fr');">FR</a>
+                        </span></div>
+                    <div class="menu">
+                    <a id="about" href="#about">about</a>
+                    <a id="blog" href="#blog">blog</a>
+                    <a id="photo" href="#photo">photo</a>
+                    <a id="contacts" href="#contacts">contacts</a>
+                    </div>
+                </div>
+            </div><!-- row -->
+        </div>
+
+        <div id="content"></div>
+
+        <div class="row">
+            <div class="grid_12">
+                <div class="footer">
+                    &copy; Happy author 
+                </div>
+            </div>
+        </div>
+
+        
+        <script type="text/javascript" src="js/site.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript"  src="js/script.js"></script>
+        
+
+        <div style="display:none;">
+            <div id="loadingMessage">
+                <div class='container'><div class='row'><div class='grid_12 center'>Loading...</div></div></div>
+            </div>
+        </div>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="grid_9" style="position:relative">
+
+<h1 id="postTitle" class="first postTitle"></h1>
+<h3 class="first postRec"><span id="postId"></span></h3>
+
+	 
+<div id="postContent"></div>
+	
+<hr>
+    <!-- delete this line --><div style="margin-left:1%;width:98%;height:180px;overflow:auto;border:1px dotted #888;">
+    <!-- delete this line -->    <strong>Comments with DISQUS—edit /pages/common/blog.html to enable comments:</strong>
+    <!-- delete this line -->    <pre style="font-size:11px;"> 
+ 	&lt;div id="disqus_thread">&lt;/div>
+        &lt;script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'YOUR_SITE_SHORTNAME'; // required: replace example with your forum shortname
+            var disqus_identifier = location.hash;
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        &lt;/script>
+
+        &lt;noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript">comments powered by Disqus.&lt;/a>&lt;/noscript>
+        &lt;a href="http://disqus.com" class="dsq-brlink">comments powered by &lt;span class="logo-disqus">Disqus&lt;/span>&lt;/a>
+    <!-- delete this line -->    </pre>
+    <!-- delete this line --></div>
+	</div>
+	<div class="grid_3">
+		<h2 id="panelCaption" class="first" style="margin-left:10px;">Recent posts:</h2>
+		<div id="blogRoll" class="postsList"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/blog.js"></script>
+<script type="text/javascript"> 
+	if (blog) blog.init(); 
+</script>
