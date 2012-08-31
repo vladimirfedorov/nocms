@@ -11,12 +11,12 @@ var blog = {
 
 	// Initialize
 	init: function() {
-		// .hash can be either #blog or #blog-yyyymmdd-hhmm
+		// .hash can be either #blog or #!blog-yyyymmdd-hhmm
 		var blogrec = location.hash;
-		if (blogrec.length !=  19)
+		if (blogrec.length !=  20)
 			blog.loadBlogRoll(0);
 		else
-			blog.loadBlogRoll(blogrec.substr(6));
+			blog.loadBlogRoll(blogrec.substr(7));
 
 	},
 
