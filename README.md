@@ -9,7 +9,7 @@ CMS file structure:
 -------------------
 
 	blog/
-	   **language**/ 				two-letter language definition or 'common'
+	   language/ 				two-letter language definition or 'common'
 	      yyyyMMdd-HHmm.txt 		blog record
 	      blog.lst 				blog cache
 	core/
